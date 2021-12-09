@@ -1,0 +1,59 @@
+Se utiliza para crear páginas SPA, single page application.
+
+Páginas web asincronas con el servidor.
+Todo es reactivo, si hago un cambio en una propiedad de un componente se muestra
+en el momento, todo va por ajax.
+Es un framework para hacer aplicaciones single page.
+
+Como instalar react:
+
+Instalar Node JS es next next next.....y asi.
+
+actualizar NPM en la consola de comandos.
+
+npm install -g npm@latest
+
+Luego npm --version para ver que version tenemos de npm
+
+Borramos la caché de npm para que no se nos descarguen versiones mas
+antiguas a la actual que tenemos de REACT.
+
+npm cache clean --force
+
+Instalamos el create react app que es un interprete de consola que permite instalar
+react muy facilmente, e incluye webpack para minificar el proyecto,
+tambien incluye un live reload.
+Y una estructura basica de archivos y carpetas para poder empezar a 
+correr y utilizar react.
+
+npm install -g create-react-app
+
+Luego para generar un nuevo proyecto de react, vamos al directorio en
+el cual lo queremos crear y hacemos.
+
+create-react-app (nombre de carpeta)
+
+Run `npm audit` for details.
+
+Success! Created aprendiendoreact at D:\Repositorios\Master-en-Frameworks-Javascript\React\aprendiendoreact
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd aprendiendoreact
+  npm start
+
+Happy hacking!
