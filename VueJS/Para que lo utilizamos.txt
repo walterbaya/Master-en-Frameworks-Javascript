@@ -1,0 +1,21 @@
+Hacer paginas web reactivas SPA sin recargar la pantalla, de forma asincrona
+con el servidor.
+
+instalar node.
+
+despues instalar vue cli.
+
+-npm install -g @vue/cli
+
+Para generar un proyecto nuevo
+
+vue create nombreproyecto (todo en minuscula)
+
+Luego instala todos los plugins y descarga todas las dependencias.
+
+Luego:
+
+cd aprendiendovue
+ $ npm run serve
+
+Instalamos el vetur para el vue.
