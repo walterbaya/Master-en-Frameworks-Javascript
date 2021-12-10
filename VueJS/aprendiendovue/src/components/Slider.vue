@@ -1,0 +1,13 @@
+<template>
+  <div id="slider" class="slider-big">
+    <h1>Master en frameworks para javascript</h1>
+    <a href="blog.html" class="btn-white">Ir al blog</a>
+  </div>
+</template>
+
+<script>
+
+export default {
+    name: 'Slider'
+}
+</script>

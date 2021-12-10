@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent></HeaderComponent>
+    <Slider></Slider>
   </div>
 </template>
 
@@ -9,13 +10,15 @@
 import MiComponente from './components/MiComponente.vue';
 */
 import HeaderComponent from './components/HeaderComponent.vue';
+import Slider from './components/Slider.vue';
 
 export default {
   name: 'App',
   components: {
     /*HelloWorld,
     MiComponente,*/
-    HeaderComponent
+    HeaderComponent,
+    Slider
   }
 }
 </script>
