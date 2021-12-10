@@ -1,0 +1,38 @@
+<template>
+  <header>
+    <div class="center">
+      <!--LOGO-->
+      <div id="logo">
+        <img src="../assets/logo.png" class="app-logo" alt="logotipo" />
+        <span id="brand"> <strong>Curso</strong>React </span>
+      </div>
+      <!--MENU-->
+      <nav id="menu">
+        <ul>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Formulario</a>
+          </li>
+          <li>
+            <a href="#">Página 1</a>
+          </li>
+          <li>
+            <a href="#">Página 2</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </div>
+  </header>
+</template>
+
+<script>
+export default {
+  name: "HeaderComponent",
+};
+</script>

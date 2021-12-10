@@ -1,0 +1,205 @@
+p, label{
+	color: #C7C7C7;
+}
+/*ESTILOS PARA EL HEADER*/
+header{
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+#contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1em;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#contenedor nav ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li{
+	padding-right: 0.5em;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+nav li:first-child{
+	font-size: 2em;
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
+#buscar{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid gray; 
+}
+
+input{
+	padding: 1em;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-style: italic;
+}
+
+header p{
+	border-top: dashed;
+	border-bottom: dashed;
+	padding: 2em;
+	padding-left: 0;
+	padding-right: 0;
+	border-color: black;
+	border-width: 2px;
+}
+
+
+/*ESTILOS PARA EL MAIN*/
+main{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+main h1{
+	font-size: 2em;
+}
+
+/*SECCION IZQUIERDA*/
+form{
+	margin-top: 4em;
+}
+#izquierda{
+	width: 40%;
+	padding-right: 1em;
+	padding-bottom: 8em;
+}
+
+#izquierda h1::first-letter, #derecha h1::first-letter{
+	font-weight: normal;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+#izquierda section:last-child form{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.servicios{
+	border-bottom: 1px solid black;
+	padding: 1em;
+}
+
+form p{
+	background-color: black;
+	margin-top: 1em;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.obligatorio{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/*SECCION DERECHA*/
+
+#derecha{
+	width: 40%;
+	padding-right: 1em;
+	position: relative;
+}
+
+#enviar{
+	position: absolute;
+	left: 20%;
+	bottom: 10%;
+	width: 50%;
+	background-color: white;
+	border-style: outset;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+/*ARTICLE*/
+
+article{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+
+article section{
+	height: 49%;
+}
+article section:first-child{
+	background: blue;
+	background-image: url("../imagenes/fondo.jpg");
+	background-size: cover;
+	background-position-x: -40px;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-top: 2em;
+}
+
+article section:last-child{
+	background-color: #FEC1CD;
+	background-image: url("../imagenes/fondo-b.png");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+article h1{
+	font-size: 1em;
+	background-color: black;
+	color: white;
+	width: 60%;
+	padding: 1em;
+	text-align: center;
+}
+
+
+article section:first-child h1:last-child{
+	width: 30%;
+}
+
+article section:last-child h1{
+	width: 80%;
+}
+
+section img{
+	width: 60%;
+	position: absolute;
+	top: 30%;
+	left: 2%;
+}
+
+/*FOOTER*/
+
+footer{
+	margin-top: 2em;
+	background-color: black;
+	height: 200px;
+}
