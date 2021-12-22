@@ -7,19 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetación Para el Master en Frameworks</title>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-    <script type="text/javascript">
-        window.addEventListener("load", function () {
-            var template = document.getElementById("article-template");
-            var articles = document.getElementById("articles");
-            for (var i = 1; i <= 5; i++) {
-                var clonado = template.cloneNode(true);
-                var h2 = clonado.getElementsByTagName("h2")[0];
-                h2.innerHTML = h2.textContent + " " + i;
-                clonado.removeAttribute("id");
-                articles.appendChild(clonado);
-            }
-        });
-    </script>
 </head>
 
 <body>
@@ -56,28 +43,32 @@
         </div>
     </header>
 
-    <div id="slider" class="slider-big">
-        <h1>Master en frameworks para javascript</h1>
-        <a href="blog.html" class="btn-white">Ir al blog</a>
-    </div>
     <div class="center">
         <section id="content">
-            <h2 class="subheader">Ultimos articulos</h2>
-            <!--Listado articulos-->
-            <div id="articles">
-                <article class="article-item" id="article-template">
-                    <div class="image-wrap">
-                        <img src="./assets/images/paisaje.jpg" alt="Paisaje">
-                    </div>
+            <article class="article-item article-detail">
+                <div class="image-wrap">
+                    <img src="./assets/images/paisaje.jpg" alt="Paisaje">
+                </div>
 
-                    <h2>Articulo de prueba</h2>
-                    <span class="date">
-                        Hace 5 minutos
-                    </span>
-                    <a href="#">Leer más</a>
+                <h1>Articulo de prueba</h1>
+                <span class="date">
+                    Hace 5 minutos
+                </span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque officiis et eveniet expedita sed
+                    ducimus esse magnam aliquid mollitia laudantium nisi labore natus, aliquam quisquam molestias
+                    nostrum rerum quos ut.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit hic magnam at, nam recusandae nihil
+                    consectetur tempora corrupti unde excepturi distinctio vel molestias officiis eum maxime aspernatur
+                    suscipit soluta impedit.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellendus veritatis error vel
+                    quisquam, qui autem officia ipsam aperiam quia? Impedit minima, dolore velit quis veniam porro ipsam
+                    facilis quisquam!</p>
                 <div class="clearfix"></div>
-                </article>
-            </div>
+            </article>
         </section>
 
         <aside id="sidebar">
