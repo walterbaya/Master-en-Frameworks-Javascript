@@ -3,7 +3,7 @@
     <div class="center">
       <!--LOGO-->
       <div id="logo">
-        <img src="../assets/logo.png" class="app-logo" alt="logotipo" />
+        <img src="../assets/images/logo.png" class="app-logo" alt="logotipo" />
         <span id="brand"> <strong>Curso</strong>React </span>
       </div>
       <!--MENU-->

@@ -3,9 +3,10 @@
     <HeaderComponent></HeaderComponent>
     <Slider></Slider>
     <div class="center"></div>
+    <LastArticles></LastArticles>
     <Sidebar></Sidebar>
     <div class="clearfix"></div>
-     <div class="center"></div>
+    <div class="center"></div>
     <FooterComponent></FooterComponent>
   </div>
 </template>
@@ -14,26 +15,27 @@
 /*import HelloWorld from './components/HelloWorld.vue'
 import MiComponente from './components/MiComponente.vue';
 */
-import HeaderComponent from './components/HeaderComponent.vue';
-import Slider from './components/Slider.vue';
-import Sidebar from './components/Sidebar.vue';
-import FooterComponent from './components/FooterComponent.vue';
+import HeaderComponent from "./components/HeaderComponent.vue";
+import Slider from "./components/Slider.vue";
+import Sidebar from "./components/Sidebar.vue";
+import FooterComponent from "./components/FooterComponent.vue";
+import LastArticles from "./components/LastArticles.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     /*HelloWorld,
     MiComponente,*/
     HeaderComponent,
     Slider,
     Sidebar,
-    FooterComponent
-  }
-}
+    FooterComponent,
+    LastArticles,
+  },
+};
 </script>
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -43,5 +45,5 @@ export default {
   margin-top: 60px;
 }
 
-@import 'assets/css/styles.css';
+@import "assets/css/styles.css";
 </style>

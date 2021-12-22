@@ -7,19 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetación Para el Master en Frameworks</title>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-    <script type="text/javascript">
-        window.addEventListener("load", function () {
-            var template = document.getElementById("article-template");
-            var articles = document.getElementById("articles");
-            for (var i = 1; i <= 5; i++) {
-                var clonado = template.cloneNode(true);
-                var h2 = clonado.getElementsByTagName("h2")[0];
-                h2.innerHTML = h2.textContent + " " + i;
-                clonado.removeAttribute("id");
-                articles.appendChild(clonado);
-            }
-        });
-    </script>
 </head>
 
 <body>
@@ -56,28 +43,30 @@
         </div>
     </header>
 
-    <div id="slider" class="slider-big">
-        <h1>Master en frameworks para javascript</h1>
-        <a href="blog.html" class="btn-white">Ir al blog</a>
-    </div>
     <div class="center">
         <section id="content">
-            <h2 class="subheader">Ultimos articulos</h2>
-            <!--Listado articulos-->
-            <div id="articles">
-                <article class="article-item" id="article-template">
-                    <div class="image-wrap">
-                        <img src="./assets/images/paisaje.jpg" alt="Paisaje">
-                    </div>
-
-                    <h2>Articulo de prueba</h2>
-                    <span class="date">
-                        Hace 5 minutos
-                    </span>
-                    <a href="#">Leer más</a>
+            <h1 class="subheader">Formulario</h1>
+            <form action="" class="mid-form radio-buttons">
+                <div class="mid-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" />
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos </label>
+                    <input type="text" name="nombre" />
+                </div>
+                <div class="form-group">
+                    <label for="bio"> Biografia</label>
+                    <textarea name="bio"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="genero" value="hombre" />Hombre
+                    <input type="radio" name="genero" value="mujer" />Mujer
+                    <input type="radio" name="genero" value="otro" />Otro
+                </div>
                 <div class="clearfix"></div>
-                </article>
-            </div>
+                <input type="submit" value="Enviar" class="btn btn-success">
+            </form>
         </section>
 
         <aside id="sidebar">
