@@ -5,6 +5,7 @@ import LastArticles from './components/MiComponente.vue'
 import Blog from './components/Blog.vue'
 import Pagina from './components/Pagina.vue'
 import Formulario from './components/Formulario.vue'
+import ErrorComponent from './components/ErrorComponent.vue'
 //Para instalar el router y asi poder tener navegacion
 //con vue, tenemos que ir a la pagina de vue router y seguir las
 //instrucciones 
@@ -18,13 +19,15 @@ Vue.use(VueRouter);
 
 //configuramos las rutas aquí dentro
 const routes = [
-  {path: '/home', component: LastArticles},
+  {path: '/home', component: MiComponente},
   {path: '/blog', component: Blog},
-  {path: '/pagina', component: Pagina},
+  //Con el ? el parametro es opcional.
+  {path: '/pagina/:id?', name: 'pagina', component: Pagina},
   {path: '/formulario', component: Formulario},
   {path: '/ultimos-articulos', component: LastArticles},
   {path: '/mi-componente', component: LastArticles},
-  {path: '/', component: MiComponente}
+  {path: '/', component: MiComponente},
+  {path: '*', component: ErrorComponent}
 ]
 
 //cargamos el vue router.
