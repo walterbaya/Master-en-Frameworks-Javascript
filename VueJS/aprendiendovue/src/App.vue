@@ -1,11 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent></HeaderComponent>
-    <Slider></Slider>
-    <div class="center"></div>
     <router-view></router-view>
-    <Sidebar></Sidebar>
-    <div class="clearfix"></div>
     <div class="center"></div>
     <FooterComponent></FooterComponent>
   </div>
@@ -16,8 +12,6 @@
 import MiComponente from './components/MiComponente.vue';
 */
 import HeaderComponent from "./components/HeaderComponent.vue";
-import Slider from "./components/Slider.vue";
-import Sidebar from "./components/Sidebar.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
@@ -26,8 +20,6 @@ export default {
     /*HelloWorld,
     MiComponente,*/
     HeaderComponent,
-    Slider,
-    Sidebar,
     FooterComponent,
   },
 };

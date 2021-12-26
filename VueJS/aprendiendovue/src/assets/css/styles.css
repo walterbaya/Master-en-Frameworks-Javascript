@@ -83,8 +83,40 @@ body {
     transition: 300ms all;
 }
 
-#menu a:hover {
-    color: #61dafb;
+#menu a:hover,
+#menu .active {
+    color: blue;
+}
+
+.alert-danger-provisional {
+    color: red;
+    font-weight: bold;
+}
+
+.alert-success-provisional {
+    color: green;
+    font-weight: bold;
+}
+
+.alert-purple-provisional {
+    color: purple;
+    font-weight: bold;
+}
+
+.yeargreen{
+    background: green !important;
+    color: white !important;
+    padding: 10px !important;
+    width: 111px !important;
+    text-align: center !important;
+}
+
+.yearred{
+    background: red !important;
+    color: white !important;
+    padding: 10px !important;
+    width: 111px !important;
+    text-align: center !important;
 }
 
 #slider {
@@ -105,12 +137,12 @@ body {
     text-align: center;
 }
 
-.btn-white{
+.btn-white {
     text-decoration: none;
     display: block;
     background: white;
     color: grey;
-    padding: 10px; 
+    padding: 10px;
     width: 100px;
     height: 35px;
     line-height: 35px;
@@ -124,40 +156,40 @@ body {
     transition: 300ms all;
 }
 
-.btn-white:hover{
+.btn-white:hover {
     background: #444;
     color: white;
 }
 
-#slider.slider-small{
+#slider.slider-small {
     height: 150px;
 }
 
-#slider.slider-small h1{
+#slider.slider-small h1 {
     margin-top: 0.2px;
     padding: 0px;
     padding-top: 53px;
 }
 
-#content{
+#content {
     width: 70%;
     float: left;
     min-height: 650px;
     margin-right: 20px;
 }
 
-#sidebar{
+#sidebar {
     width: 25%;
-    float: left; 
+    float: left;
 }
 
-.sidebar-item{
+.sidebar-item {
     background: #f7f7f7;
     padding: 20px;
     margin-top: 30px;
 }
 
-.sidebar-item h3{
+.sidebar-item h3 {
     text-transform: uppercase;
     font-size: 17px;
     margin: 0px;
@@ -166,12 +198,12 @@ body {
     margin-bottom: 10px;
 }
 
-.sidebar-item .btn{
+.sidebar-item .btn {
     margin-top: 10px;
     margin: 0px auto;
 }
 
-.btn{
+.btn {
     display: block;
     background: black;
     color: white;
@@ -186,16 +218,16 @@ body {
     cursor: pointer;
 }
 
-.btn-success{
+.btn-success {
     background: green;
 
 }
 
-.btn-success:hover{
+.btn-success:hover {
     background: black;
 }
 
-.mid-form label{
+.mid-form label {
     text-align: left;
     display: block;
     float: left;
@@ -205,7 +237,7 @@ body {
 }
 
 input[type="text"],
-textarea{
+textarea {
     width: 100%;
     height: 30px;
     border: 1px solid #ccc;
@@ -214,17 +246,17 @@ textarea{
     transition: 300ms all;
 }
 
-.mid-form{
+.mid-form {
     width: 50%;
 }
 
-.radio-buttons{
+.radio-buttons {
     margin-top: 10px;
     float: left;
     margin-bottom: 10px;
 }
 
-textarea{
+textarea {
     width: 100%;
     max-width: 100%;
     max-height: 150px;
@@ -233,11 +265,12 @@ textarea{
 }
 
 
-input[type="text"]:focus, textarea:focus{
+input[type="text"]:focus,
+textarea:focus {
     box-shadow: 0px 0px 5px #eee inset;
 }
 
-#footer{
+#footer {
     background: #f7f7f7;
     width: 100%;
     height: 70px;
@@ -245,12 +278,12 @@ input[type="text"]:focus, textarea:focus{
     color: #444;
 }
 
-#footer p{
+#footer p {
     margin: 0px;
     padding: 0px;
 }
 
-.article-item{
+.article-item {
     width: 100%;
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
@@ -258,7 +291,7 @@ input[type="text"]:focus, textarea:focus{
     text-align: left;
 }
 
-.article-item .image-wrap{
+.article-item .image-wrap {
     width: 130px;
     height: 130px;
     overflow: hidden;
@@ -267,12 +300,12 @@ input[type="text"]:focus, textarea:focus{
     border: 1px solid #ccc;
 }
 
-.article-item .image-wrap img{
+.article-item .image-wrap img {
     height: 100%;
     text-align: center;
 }
 
-.article-item h2{
+.article-item h2 {
     display: block;
     width: 100%;
     padding: 0;
@@ -280,10 +313,10 @@ input[type="text"]:focus, textarea:focus{
     margin-bottom: 7px;
 }
 
-.article-item .date{
+.article-item .date {
     display: block;
     width: 100%;
-    color: rgb(122,122,122);
+    color: rgb(122, 122, 122);
 }
 
 .article-item a {
@@ -292,28 +325,29 @@ input[type="text"]:focus, textarea:focus{
     margin-top: 10px;
 }
 
-.article-item a:hover{
+.article-item a:hover {
     text-decoration: underline;
 }
 
 .subheader {
-    font-size: 38px;border-bottom: 1px solid #eee;
+    font-size: 38px;
+    border-bottom: 1px solid #eee;
     padding-bottom: 10px;
 }
 
-.article-detail .image-wrap{
+.article-detail .image-wrap {
     float: none;
     width: 100%;
     height: 300px;
 }
 
-.article-detail .image-wrap img{
+.article-detail .image-wrap img {
     width: 100%;
     height: auto;
 
 }
 
-.article-detail .subheader{
+.article-detail .subheader {
     margin-top: 10px;
     margin-bottom: 0px;
     border: none;
