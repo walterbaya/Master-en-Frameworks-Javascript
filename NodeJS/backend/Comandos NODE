@@ -1,0 +1,46 @@
+
+npm init inicia un proyecto de NODEJS.
+Damos el nombre del paquete o carpeta y luego 
+continuamos configurando hasta el final.
+
+Instalamos las dependencias o librerias.
+
+INSTALAMOS PRIMERAMENTE EXPRESS(Nos permite recibir peticiones en HTTP y devolver un JSON)
+-npm install --save express (el save es para que lo guarde como dependencia del proyecto)
+-instalamos el parser, para que cuando enviemos un formulario, el parser lo convierte a un JSON
+directamente.
+
+npm install --save  body-parser
+
+--Instalamos el ORM Mongoose para trabajar con MongoDB, es basicamente como Hibernate.
+
+-npm install --save mongoose
+
+Todas stas cosas se van a ir agregando al packages.json
+
+Instalamos el multiparty tambien.
+npm install --save connect-multiparty
+
+Cuando mongoose se conecta a mongo db directamente creara la base de datos.
+
+Instalamos tambien el validator para poder hacer validaciones, validarla para que se la info que queramos.
+
+npm install --save validator.
+
+Instalamos las devtools.
+
+npm install --save-dev nodemon
+
+instalamos en el archivo package.json
+esto dentro de scripts
+
+ "start": "nodemon index.js", 
+
+ luego ejecuto npm start.
+
+ en app.js es donde creamos el servidor y todo eso
+ lo importante es usar strict en todo.
+
+ http://localhost:puerto/
+
+ //Añadir la extension jsonviewer en google chrome.
