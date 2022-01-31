@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 var app = express();
 
 //cargar ficheros rutas
+var article_routes = require('./routes/article');
+
 //Middlewares que se van a ejecutar antes de las rutas, procesar
 //un dato antes de ejcutar la ruta
 // cargamos el body parser.
@@ -19,15 +21,7 @@ app.use(bodyParser.json());
 //CORS, para permitir peticiones desde el frontend.
 
 //Añadir prefijos a rutas.
-
-//ruta o metodo de prueba
-app.get('/probando', (request, response) => {
-    return response.status(200).send({
-        curso: 'Master en Frameworks JS',
-        autor: 'Victor Robles web',
-        url: 'Victor Robles web'
-    });
-});
+app.use('/api', article_routes);
 
 //Exportar modulo, el fichero actual, para poder cargar el app en el index.
 //permite usar este objeto fuera de este fichero
