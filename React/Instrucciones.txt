@@ -1,0 +1,21 @@
+Limpiamos la cache.
+
+npm cache clean --force 
+
+instalamos React utilizamos el paquete create React App.
+(Lo bajamos de GITHUB) interprete de consola, CLI, incluye
+webpack, livereload, nos permite minificar facilmente.
+Es el equivalente a Angular CLI.
+
+npm install -g create-react-app
+
+Para generar un nuevo proyecto de React.
+
+ create-react-app (nombre)
+
+ Pero no permite utilizar Capital letters.
+
+ con npm start comienza, se puede leer en README.md
+
+
+
