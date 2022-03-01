@@ -2,3 +2,8 @@
 <h2>{{year}}</h2>
 <p>{{comentario}}</p>
 <p>Hola soy un párrafo en la vista</p>
+
+<button (click)="ocultarPeliculas()">Ocultar Peliculas</button>
+<div *ngIf="mostrarPeliculas">
+    <app-peliculas></app-peliculas>
+</div>

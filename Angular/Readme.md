@@ -34,3 +34,5 @@ CREAR COMPONENTE.
 
 ng g component  components/peliculas
 
+CARGAR LAS HOJAS DE ESTILOS EN LA SECCION DE STYLES DE ASSETS.JS
+
