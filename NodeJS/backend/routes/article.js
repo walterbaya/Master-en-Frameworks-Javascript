@@ -12,6 +12,8 @@ var md_upload = multipart({uploadDir: './upload/articles'});
 router.get('/test-de-controlador', ArticleController.test);
 router.get('/articles/:last?', ArticleController.getArticles);
 router.get('/article/:id', ArticleController.getArticle);
+router.get('/get-image/:image', ArticleController.getImage);
+router.get('/search/:search', ArticleController.search);
 router.post('/datos-curso', ArticleController.datosCurso);
 router.post('/save', ArticleController.save);
 router.put('/article/:id', ArticleController.update);
