@@ -12,11 +12,14 @@ import Peliculas from './components/Peliculas.vue'
 //instrucciones 
 //Luego importamos el router
 import VueRouter from 'vue-router';
+import Vuelidate from 'vuelidate';
+
 
 Vue.config.productionTip = false;
 
 //cargamos el router dentro de vue.
 Vue.use(VueRouter);
+Vue.use(Vuelidate);
 
 //configuramos las rutas aquí dentro
 const routes = [{

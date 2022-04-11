@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-import SeccionPruebas from './components/SeccionPruebas';
+import Peliculas from './components/Peliculas'
 
 function HolaMundo(nombre) {
   var presentacion = <div>
@@ -14,16 +14,19 @@ function HolaMundo(nombre) {
 }
 
 function App() {
-  var nombre = "Victor Robles";
+  var buttonString = "Ir al blog";
   return (
     <div className="App">
       <Header />
-      <Slider />
-      <SeccionPruebas/>
-    
+      <Slider title="Bienvenido"
+        btn= {buttonString}
+
+      />
+      <Peliculas />
+
       <Sidebar />
       <div className='clearfix'></div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
