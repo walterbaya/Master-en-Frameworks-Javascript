@@ -1,2 +1,29 @@
-<h1>{{titulo}}</h1>
+<app-slider [nombre]="'Peliculas'"></app-slider>
+<h1 class="subheader">Peliculas</h1>
+<h2>{{titulo}}</h2>
 <button (click)="cambiarTitulo()">Pulsame</button>
+<hr />
+
+<h2>Mostrar primera pelicula</h2>
+
+{{peliculas[0].title}}
+
+<hr />
+
+<h2>
+    Número de peliculas
+</h2>
+
+<hr />
+
+<h2>
+   {{favorita.title}}
+</h2>
+<h2 class="subheader">Listado de Peliculas</h2>
+<div id="articles" *ngIf="peliculas">
+    <div *ngFor="let pelicula of peliculas; let i = index;">
+        <app-pelicula 
+        (MarcarFavorita) = "mostrarFavorita($event)"
+        [pelicula]="pelicula"></app-pelicula>
+    </div>
+</div>
