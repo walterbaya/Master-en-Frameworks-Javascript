@@ -5,6 +5,8 @@ import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import Peliculas from './components/Peliculas'
+import { Router } from 'react-router-dom';
+import Router from 'Router';
 
 function HolaMundo(nombre) {
   var presentacion = <div>
@@ -22,8 +24,7 @@ function App() {
         btn= {buttonString}
 
       />
-      <Peliculas />
-
+      <Router></Router>
       <Sidebar />
       <div className='clearfix'></div>
       <Footer />
